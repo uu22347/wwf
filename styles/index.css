@@ -1,4 +1,4 @@
-/* ========================1행 캠페인 표지(m) */
+/* ====================================1행 캠페인 표지(m) */
 #wrap .intro {
     /* 북극곰배경 bg1.png */
     padding:100px 0;
@@ -31,3 +31,57 @@
 #wrap .intro h1 span:nth-child(1) {}
 #wrap .intro h1 span:nth-child(2) {}
 #wrap .intro .sponsor_btn {}
+/* =======================================2행 퀴즈(m) */
+#wrap .quiz_bg {
+    background:url(../images/quiz_bg.png); 
+    background-size:cover; background-position:center bottom; 
+    padding:70px;
+} 
+#wrap .quiz_bg .quiz {
+    display:flex; 
+    flex-flow:column nowrap;/* t, d column -> row */
+    gap:50px;
+}
+#wrap .quiz_bg .quiz .quiz_list {}
+#wrap .quiz_bg .quiz .quiz_list > * {margin:0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    color:#fff; 
+    font-size:1.50rem; line-height:1.2;
+    font-weight:500; letter-spacing:-0.01rem;
+    font-family:'Noto Sans KR',sans-serif;/* 단독 글꼴 경우 */
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    display:block; color:#fff; line-height:1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(1) {}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm {margin:0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin:0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {margin:0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin:0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input {display:none;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input:checked + label {
+    background-image:url(../images/chk_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+    font-size:0.88rem; color:#fff;
+    background-image:url(../images/chk_off.svg);
+    background-size:16px; background-repeat:no-repeat;
+    padding-left:47.75px;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label:hover {color:#FE9300;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {
+    background-color: #050505; color:#fff; 
+    line-height:1.7; padding:10px;
+    border-radius:50px;
+    width:100%;
+    transition:background 0.3s;
+} 
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn:hover {background-color: #888;}
+#wrap .quiz_bg .quiz .quiz_status {}
+#wrap .quiz_bg .quiz .quiz_status img {width:100%;}
+#wrap .quiz_bg .quiz .quiz_status p {
+    line-height:1.7; margin:20px 0 0;
+    color:#fff; font-size:1.25rem;
+}
