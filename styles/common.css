@@ -3,8 +3,18 @@
 #wrap * {transition:all 0.3s;}
 #wrap .container {
     min-width:320px;
+    background-size:cover; background-position:center; 
+    padding:70px 15px;
 }
 #wrap .container .contents {max-width:1250px; margin:0 auto;}
+#wrap .container .contents h1 {
+    font-size:1.38rem; font-weight:500; line-height:1.2; margin:0 0 40px;
+}
+#wrap .container .contents h1 .highlight {background-color:#fff; color:#050505; font-weight:500;}
+#wrap .container .contents p {
+    font-size:0.81rem;
+    line-height:1.7; font-weight:500; margin:0 0 22px;
+}
 /* mobile design - .sponsor_btn  */
 #wrap .container .sponsor_btn {
     display:block; margin: 0 auto;

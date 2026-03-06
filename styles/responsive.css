@@ -2,13 +2,24 @@
 /* m(320~) -> t(1024~) -> d(1250~) */
 @media screen and (min-width:600px) {
     /* ================================================2행 퀴즈 */
-    #wrap .quiz_bg .quiz { 
-        flex-flow:row nowrap;/* t, d column -> row */
-    }
+    #wrap .quiz_bg .quiz {flex-flow:row nowrap;/* t, d column -> row */}
     #wrap .quiz_bg .quiz > * {flex:1;}
 }
 @media screen and (min-width:860px) {
     #wrap .intro {padding:300px 0 100px;}
+    /* ================================================3~6행 공통 */
+    #wrap .container .contents {padding:200px 80px;}
+    #wrap .container .contents h1 {font-size:2.50rem; line-height:1.2; margin:0 0 40px;}
+    #wrap .container .contents p {font-size:1.38rem;}
+    /* ================================================3행 */
+    #wrap .video_bg .video h1 {margin:0 0 70px;}
+    #wrap .video_bg .video iframe {height:484px;}
+    /* ================================================5행 */
+    #wrap .humanity_bg .humanity .list {flex-flow:row nowrap;}
+    #wrap .humanity_bg .humanity .list li {flex:1;}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
+    #wrap .humanity_bg .humanity .list li .txt {height:250px;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size:1rem;}
 }/* 860~1023 */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
@@ -29,7 +40,18 @@
         background-size:28px; line-height:2;
         padding-left:48px;
     }
-    #wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {width:75%;}
+    /* ==================================================8행 */
+    #wrap .activity_bg .activity .details {
+        grid-template-areas: 
+            'public nature'
+            'corporation nature';
+        grid-template-columns: 1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {padding-bottom:22px; position: relative;}
+    #wrap .activity_bg .activity .details li .txt {padding:20px; background:rgba(0,0,0,0.5); width:50%;}
+    #wrap .activity_bg .activity .details li:nth-child(3) .txt {position: absolute; left:0; bottom:31px;}
+    #wrap .activity_bg .activity .details li .txt dt {margin-bottom:18px; font-size:2.13rem; color:#fff;}
+    #wrap .activity_bg .activity .details li .txt dd {font-size:1.25rem; line-height:1.7;}
 }/* 1024~ */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding:447px 0 100px;}
@@ -40,5 +62,16 @@
     #wrap .intro .sponsor_btn {width: 409px; height:71px; }
     #wrap .intro .sponsor_btn em {font-size: 2.13rem;}
     #wrap .intro .sponsor_btn::after {font-size: 2rem;}
-    /* ================================================2행 퀴즈 */
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm #answer_btn {width:75%;}
+    /* ================================================3~6행 공통 */
+    #wrap .container .contents {padding:200px 80px;}
+    #wrap .container .contents h1 {font-size:3.44rem; margin:0 0 81px;}
+    #wrap .container .contents p {font-size:2.13rem;}
+    /* ================================================3행 */
+    #wrap .video_bg .video iframe {height:600px;}
+    /* ================================================5행 */
+    #wrap .humanity_bg .humanity p {font-size:1.25rem;}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
+    #wrap .humanity_bg .humanity .list li dl dd {font-size:1.25rem;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size:1.25rem;}
 }/* 1250~max */

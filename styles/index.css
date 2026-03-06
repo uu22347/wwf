@@ -34,7 +34,6 @@
 /* =======================================2행 퀴즈(m) */
 #wrap .quiz_bg {
     background:url(../images/quiz_bg.png); 
-    background-size:cover; background-position:center bottom; 
     padding:70px;
 } 
 #wrap .quiz_bg .quiz {
@@ -85,3 +84,91 @@
     line-height:1.7; margin:20px 0 0;
     color:#fff; font-size:1.25rem;
 }
+/* ============================================================3 */
+#wrap .video_bg {
+    background-image:url(../images/video_bg.png);
+    padding:50px 15px;
+}
+#wrap .video_bg .video h1 {text-align: center;}
+#wrap .video_bg .video iframe {width:100%; margin:0 0 70px;}
+/* ============================================================4 */
+#wrap .reduction_bg {
+    background-image:url(../images/reduction_50_bg.png);
+}
+#wrap .reduction_bg .reduction h1 {color:#fff;}
+#wrap .reduction_bg .reduction p {color:#fff;}
+#wrap .reduction_bg .reduction p img {width:100%;}
+/* ============================================================5 */
+#wrap .humanity_bg {
+    background-color:#f5f5f5;
+}
+#wrap .humanity_bg .humanity h1 {text-align: center;}
+#wrap .humanity_bg .humanity h1+p {text-align: center;}
+#wrap .humanity_bg .humanity .list {
+    display: flex; flex-flow: column nowrap; gap:20px;
+    /* display:grid; grid-template-rows:1fr 1fr 1fr; */
+}
+#wrap .humanity_bg .humanity .list li {}
+#wrap .humanity_bg .humanity .list li dl {}
+#wrap .humanity_bg .humanity .list li dl {
+    background-size: cover; background-position: center;
+    padding:48px 0; text-align:center; position: relative;
+}
+#wrap .humanity_bg .humanity .list li dl * {color:#fff; position: relative; z-index:10;}
+#wrap .humanity_bg .humanity .list li:nth-child(1) dl {background-image: url(../images/warming_28t.png);}
+#wrap .humanity_bg .humanity .list li:nth-child(2) dl {background-image: url(../images/warming_27cm.png)}
+#wrap .humanity_bg .humanity .list li:nth-child(3) dl {background-image: url(../images/wwf.jpg);}
+#wrap .humanity_bg .humanity .list li dl::before {
+    content:''; display:block; 
+    width: 100%; height: 100%;
+    position: absolute; left:0; top:0; z-index:9; 
+    background:linear-gradient(rgba(0,0,0,1), transparent);
+}
+#wrap .humanity_bg .humanity .list li dl dt {font-size:1.38rem; font-weight:500; line-height:1.2; margin:0 0 12px; }
+#wrap .humanity_bg .humanity .list li dl dd {line-height:1.7; font-weight:300;}
+#wrap .humanity_bg .humanity .list li .txt {background-color: #fff;}
+#wrap .humanity_bg .humanity .list li .txt p {text-align:center; padding:20px; font-size:0.82rem; line-height:1.7;}
+/* ============================================================6 */
+#wrap .crisis_bg {
+    background-image:url(../images/reduction_50_bg.png);
+}
+#wrap .crisis_bg .crisis h1 {color:#fff;}
+#wrap .crisis_bg .crisis p {color:#fff;}
+#wrap .crisis_bg .crisis p img {width:100%;}
+/* ============================================================7 */
+#wrap .wwf_bg {background-image: url(../images/wwf.jpg); position:relative;}
+#wrap .wwf_bg::before {
+    position:absolute; content:''; display:block;
+    width:100%; height:100%; left:0; top:0;
+    background:rgba(255,255,255,0.7); z-index:9;
+}
+#wrap .wwf_bg .wwf {text-align: center; position: relative;  z-index:10;} 
+#wrap .wwf_bg .wwf h1 {font-size:1.88rem; font-weight:600;}
+#wrap .wwf_bg .wwf h1 p {font-size:0.81rem;}
+/* ============================================================8 */
+#wrap .activity_bg {}
+#wrap .activity_bg .activity {}
+#wrap .activity_bg .activity h1 {text-align: center;}
+#wrap .activity_bg .activity .details {
+    display:grid; gap: 22px;
+    grid-template-areas: 
+        'public'
+        'corporation'
+        'nature';
+}
+#wrap .activity_bg .activity .details li {background-size:cover; background-position:center; padding-top:94px;}
+#wrap .activity_bg .activity .details li:nth-child(1) {
+    grid-area:public;/* 대중- grid 2차원 정렬을 위한 자식 이름 짓기 */
+    background-image:url(../images/warming_28t.png);
+}
+#wrap .activity_bg .activity .details li:nth-child(2) {
+    grid-area:corporation;/* 기업 */
+    background-image:url(../images/wwf.jpg);
+}
+#wrap .activity_bg .activity .details li:nth-child(3) {
+    grid-area:nature;/* 자연 */
+    background-image:url(../images/reduction_50.png);
+}
+#wrap .activity_bg .activity .details li .txt {padding:20px; background:rgba(0,0,0,0.5);}
+#wrap .activity_bg .activity .details li .txt dt {margin-bottom:18px; font-size:1.38rem; color:#fff;}
+#wrap .activity_bg .activity .details li .txt dd {font-size:0.81rem; color:#fff;} 
