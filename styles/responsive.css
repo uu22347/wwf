@@ -20,15 +20,38 @@
     #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
     #wrap .humanity_bg .humanity .list li .txt {height:250px;}
     #wrap .humanity_bg .humanity .list li .txt p {font-size:1rem;}
+    /* ================================================9행 */
+    #wrap .present_bg .present {}
+    #wrap .present_bg .present .title {
+        flex-flow:row nowrap; 
+        justify-content:space-between; align-items:end;
+        margin:0 0 40px;
+    }
+    #wrap .present_bg .present .title h1 {margin: 0;}
+    #wrap .present_bg .present .title a {}
+    #wrap .present_bg .present .present_details {
+        gap: 20px;
+        grid-template-areas: 
+            'present1 present2'
+            'present3 present3';
+            grid-template-columns: 1fr 1fr;
+    }
+    #wrap .present_bg .present .present_details li {}
+    #wrap .present_bg .present .present_details li .photo {height:300px; transform: translateY(100px);} 
+    #wrap .present_bg .present .present_details li .photo img {height:100%;}
+    #wrap .present_bg .present .present_details li h2 {font-size: 1rem;}
+    #wrap .present_bg .present .present_details li p {font-size: 1rem;}
+    #wrap .present_bg .present p {text-align: right;}
+    #wrap .present_bg .present p span {font-size: 1rem;}
 }/* 860~1023 */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
     #wrap .intro .logo {width: 32px; left:36px; top:30px;}
     #wrap .intro h1 { margin:0 0 100px;}
     #wrap .intro h1 span {font-size:3.13rem; font-weight:600;}
-    #wrap .intro .sponsor_btn {width: 238px; height:60px; }
-    #wrap .intro .sponsor_btn em {font-size: 1.38rem;}
-    #wrap .intro .sponsor_btn::after {font-size: 1rem;}
+    #wrap .container .sponsor_btn {width: 238px; height:60px; }
+    #wrap .container .sponsor_btn em {font-size: 1.38rem;}
+    #wrap .container .sponsor_btn::after {font-size: 1rem;}
     /* ================================================2행 퀴즈 */
     #wrap .quiz_bg {padding:150px 80px;}
     #wrap .quiz_bg .quiz .quiz_list {width:400px;}
@@ -45,17 +68,38 @@
         grid-template-areas: 
             'public nature'
             'corporation nature';
-        grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        #wrap .activity_bg .activity .details li {padding-bottom:22px; position: relative;}
+        #wrap .activity_bg .activity .details li .txt {padding:20px; background:rgba(0,0,0,0.5); width:50%;}
+        #wrap .activity_bg .activity .details li:nth-child(3) .txt {position: absolute; left:0; bottom:31px;}
+        #wrap .activity_bg .activity .details li .txt dt {margin-bottom:18px; font-size:2.13rem; color:#fff;}
+        #wrap .activity_bg .activity .details li .txt dd {font-size:1.25rem; line-height:1.7;}
+    /* ================================================9행 */
+    #wrap .present_bg .present {padding:200px 0;}
+    #wrap .present_bg .present h1 {}
+    #wrap .present_bg .present a {}
+    #wrap .present_bg .present .present_details {
+        padding:40px 0; gap:45px;
+            grid-template-areas: 
+        'present1 present2 present3';
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    #wrap .activity_bg .activity .details li {padding-bottom:22px; position: relative;}
-    #wrap .activity_bg .activity .details li .txt {padding:20px; background:rgba(0,0,0,0.5); width:50%;}
-    #wrap .activity_bg .activity .details li:nth-child(3) .txt {position: absolute; left:0; bottom:31px;}
-    #wrap .activity_bg .activity .details li .txt dt {margin-bottom:18px; font-size:2.13rem; color:#fff;}
-    #wrap .activity_bg .activity .details li .txt dd {font-size:1.25rem; line-height:1.7;}
-}/* 1024~ */
-@media screen and (min-width:1250px) {
-    #wrap .intro {padding:447px 0 100px;}
-    #wrap .intro .logo {width: 42px; left:61px; top:53px;}
+    #wrap .present_bg .present .present_details li {}
+    #wrap .present_bg .present .present_details li .photo {height:300px;}
+    #wrap .present_bg .present .present_details li .photo img {height:100%;}
+    #wrap .present_bg .present .present_details li .photo h2 {font-size:1.25rem;}
+    #wrap .present_bg .present .present_details li .photop {font-size:1.25rem;}
+    #wrap .present_bg .present p {text-align: center;}
+    #wrap .present_bg .present p span {font-size: 1.25rem;}
+    /* ================================================10행 */
+    #wrap .guide_bg .guide {padding:0;}
+    #wrap .guide_bg .guide h1 {font-size: 1.38rem; margin:0;}
+    #wrap .guide_bg .guide p {font-size: 1rem;}
+    }/* 1024~ */
+    @media screen and (min-width:1250px) {
+        #wrap .intro {padding:447px 0 100px;}
+        #wrap .intro .logo {width: 42px; left:61px; top:53px;}
     #wrap .intro h1 span {font-size:4.38rem;}
     #wrap .intro h1 span:nth-child(1) {font-weight:400;}
     #wrap .intro h1 span:nth-child(2) {font-weight:700;}
@@ -74,4 +118,8 @@
     #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
     #wrap .humanity_bg .humanity .list li dl dd {font-size:1.25rem;}
     #wrap .humanity_bg .humanity .list li .txt p {font-size:1.25rem;}
+    /* ================================================10행 */
+    #wrap .guide_bg .guide {}
+    #wrap .guide_bg .guide h1 {font-size: 2.13rem; margin:0;}
+    #wrap .guide_bg .guide p {font-size:1.56rem;}
 }/* 1250~max */

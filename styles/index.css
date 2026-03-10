@@ -172,3 +172,32 @@
 #wrap .activity_bg .activity .details li .txt {padding:20px; background:rgba(0,0,0,0.5);}
 #wrap .activity_bg .activity .details li .txt dt {margin-bottom:18px; font-size:1.38rem; color:#fff;}
 #wrap .activity_bg .activity .details li .txt dd {font-size:0.81rem; color:#fff;} 
+/* ============================================================9 */
+#wrap .present_bg {background-image:url(../images/reduction_50_bg.png);}
+#wrap .present_bg .present {}
+#wrap .present_bg .present .title {display: flex; flex-flow:column nowrap;}
+#wrap .present_bg .present .title h1 {color:#fff;}
+#wrap .present_bg .present .title .sponsor_btn {margin:0;}
+#wrap .present_bg .present .title .sponsor_btn em {}
+#wrap .present_bg .present .present_details {
+    padding:40px 0; display:grid;
+    grid-template-areas: 
+        'present1'
+        'present2'
+        'present3';
+}
+#wrap .present_bg .present .present_details li {}
+#wrap .present_bg .present .present_details li:nth-child(1) {grid-area:present1;}
+#wrap .present_bg .present .present_details li:nth-child(2) {grid-area:present2;}
+#wrap .present_bg .present .present_details li:nth-child(3) {grid-area:present3;}
+#wrap .present_bg .present .present_details li .photo {height:150px; overflow:hidden;}
+#wrap .present_bg .present .present_details li .photo img {width:100%; transform: translateY(-100px);}
+#wrap .present_bg .present .present_details li h2 {color:#fff; margin-top: 13px; text-align: center;}
+#wrap .present_bg .present .present_details li p {color:#fff; text-align: center;}
+#wrap .present_bg .present p {text-align: center;}
+#wrap .present_bg .present p span {background-color: #fff; }
+/* ============================================================10 */
+#wrap .guide_bg {background-color:#E4E5EA;}
+#wrap .guide_bg .guide {}
+#wrap .guide_bg .guide h1 {line-height:1.2; margin:0; font-weight:700;}
+#wrap .guide_bg .guide p {line-height:1.7;  margin:0;}
